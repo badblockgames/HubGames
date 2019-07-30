@@ -5,6 +5,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.badblock.gameapi.GameAPI;
+import fr.badblock.hubgames.listeners.BadPlayerMoveEvent;
 
 public class Main extends JavaPlugin{
 	
@@ -19,7 +20,6 @@ public class Main extends JavaPlugin{
 		instance = this;
 		getListeners();
 		getApi();
-		getCommands();
 		loadConfig();
 	}
 	public static Main getInstance() {
@@ -28,12 +28,10 @@ public class Main extends JavaPlugin{
 	
 	void getListeners() {
 		PluginManager pm = Bukkit.getPluginManager();
+		pm.registerEvents(new BadPlayerMoveEvent(), this);
 	}
-	public void getApi() {
-		GameAPI api = GameAPI.getAPI();
-	}
-	void getCommands() {
-		
+	public GameAPI getApi() {
+		return GameAPI.getAPI();
 	}
 	void loadConfig() {
 			getConfig().options().copyDefaults(true);
