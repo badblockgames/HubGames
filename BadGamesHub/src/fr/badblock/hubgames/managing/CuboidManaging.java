@@ -1,8 +1,11 @@
 package fr.badblock.hubgames.managing;
 
+import java.util.HashMap;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.entity.Player;
 
 import fr.badblock.hubgames.Main;
 import fr.badblock.hubgames.utils.Cuboid;
@@ -10,6 +13,24 @@ import fr.badblock.hubgames.utils.Cuboid;
 public class CuboidManaging {
 	
 	Main main = Main.getInstance();
+	
+	public static HashMap<Player,Cuboid> pvpMap = new HashMap<>();
+	public static HashMap<Player,Cuboid> spleefMap = new HashMap<>();
+	public static HashMap<Player,Cuboid> archeryMap = new HashMap<>();
+	public static HashMap<Player,Cuboid> blockpartyMap = new HashMap<>();
+	public static HashMap<Player,Cuboid> raceMap = new HashMap<>();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public Cuboid getPvPCuboid() {
 		World world = Bukkit.getWorld(main.getConfig().getString("worldname"));
