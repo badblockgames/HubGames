@@ -4,12 +4,12 @@
 worldname: "world"
 pvp:
   cuboid:
-    x1: 0
-    y1: 0
-    z1: 0
-    x2: 0
-    y2: 0
-    z2: 0
+    x1: -43.306
+    y1: 99
+    z1: 208.075
+    x2: -52.528
+    y2: 131
+    z2: 218.647
 spleef:
   cuboid:
     x1: 0
