@@ -1,11 +1,18 @@
 package fr.badblock.hubgames.utils;
 
-import org.bukkit.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.serialization.ConfigurationSerializable;
+import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
-
-import java.util.*;
 
 //***************************************************************************\\ 
 //***************** Java Cuboid Spigot Class made by Cixxor *****************\\ 
@@ -171,5 +178,4 @@ public class Cuboid implements Cloneable, ConfigurationSerializable, Iterable<Bl
             return null;
         }
     }
-
 }
