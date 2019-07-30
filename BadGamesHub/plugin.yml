@@ -1,0 +1,5 @@
+name: BadGames
+authors: [Cixxor,TheoLs]
+version: 1.0
+main: fr.badblock.hubgames.Main
+commands:
