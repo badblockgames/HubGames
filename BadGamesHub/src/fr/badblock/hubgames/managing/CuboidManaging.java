@@ -20,6 +20,8 @@ public class CuboidManaging {
 	public static HashMap<Player,Cuboid> blockpartyMap = new HashMap<>();
 	public static HashMap<Player,Cuboid> raceMap = new HashMap<>();
 	
+	
+	
 	public Cuboid getPvPCuboid() {
 		World world = Bukkit.getWorld(main.getConfig().getString("worldname"));
 		int x = main.getConfig().getInt("pvp.cuboid.x1");
